@@ -1,4 +1,7 @@
 from image import *
+import os
+
+token = os.environ.get('telegram_token')
 
 generators_list = """ Форматы картинок:
 /image_preview - Аватарка(400x400)
@@ -23,7 +26,6 @@ color_themes = {
 	'/theme_green': ('#44aa66', '#ffffff')
 }
 
-token = '1513885476:AAFb37Uy1mcnkk_lQl09yGexKRMJvJBPXaw'
 
 help_message = '''Рад вас видеть в боте PictureBot! 
 Данный бот умеет создавать картинки с текстом. 
